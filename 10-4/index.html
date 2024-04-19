@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Parallax Website</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="head">
+        <a href="#" class="logo">Eid-ul-Fitr</a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Conact</a></li>
+            <li><a href="#" class="active">Buy Now</a></li>
+        </ul>
+       </header>
+       <section class="pic">
+        <img src="stars1.png" id="stars1">
+        <img src="stars2.png" id="stars2">
+        <img src="pizza.png" id="pizza">
+        <img src="mosquee.png" id="mosquee">
+        <img src="sister.png" id="sister">
+        <img src="male.png" id="male">
+        <img src="female.png" id="female">
+        <img src="brother.png" id="brother">
+     <img src="sweets.png" id="sweets">
+    </section>
+    <div class="text">
+        <ul>
+            <ul>
+                <h2>Eid Activites</h2>
+                <li>One of the first things Muslims do on Eid-ul-Fitr is to wake up early and pray.</li> 
+                <li>Enjoy a festive meal with their family and friends</li>
+                <li>Charity is an integral part of Eid-ul-Fitr. Many Muslims donate money or food to the poor and needy on this day.</li>
+                <li>Little ones get to celebrate by receiving Eddie–a small amount of money that kids can use to buy toys and gifts for themselves.</li>
+                <li>Eid-ul-Fitr is also a time to spend with family and friends. Many Muslims visit their relatives and friends to exchange Eid greetings and gifts on Eid day.
+                </li>
+            </ul>
+        </ul>
+<script>
+       let stars1 = document.getElementById('stars1');
+       let stars2 = document.getElementById('stars2');
+       let pizza = document.getElementById('pizza');
+       let mosquee = document.getElementById('mosquee');
+       let sister = document.getElementById('sister');
+       let male = document.getElementById('male');
+       let female = document.getElementById('female');
+       let brother = document.getElementById('brother');
+       let sweets = document.getElementById('sweets');
+
+       window.addEventListener('scroll', function(){
+        let value = window.scrollY;
+        stars1.style.top = value  * 0.5+'px';
+        pizza.style.top = value  * -0.75+'px';
+        mosquee.style.top = value  * 0.99+'px';
+        mosquee.style.left = value  * -0.75+'px';
+        sister.style.left = value  * 0.95+'px';
+        male.style.left = value * 0.75+'px';
+        male.style.top = value * 0.99+'px';
+        female.style.left = value * 0.75+'px';
+        brother.style.left = value  * 0.6+'px';
+        brother.style.top = value  * 0.99+'px';
+        sweets.style.top = value  * -0.25+'px';
+    })
+</script>
+</body>
+</html>
